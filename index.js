@@ -27,7 +27,7 @@ app.get("/api/products/:category", (req, res) => {
     res.status(404).send("no data was found");
     return;
   }
-  res.json(product);
+  res.json(products);
 });
 
 app.listen(PORT, () => {
